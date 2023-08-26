@@ -1,14 +1,16 @@
 .App {
   min-height: 100vh;
   display: flex;
+  /*hori */
   justify-content: center;
+  /*verti */
   align-items: center;
   background-color: #282c34;
 }
 
 .container {
   display: flex;
-  height: 80vh;
+  height: 90vh;
   border: 1px solid grey;
   padding: 20px;
   flex-direction: column;
@@ -16,40 +18,52 @@
   font-size: 20px;
   color: white;
 }
-
 .todoForm {
   display: flex;
-  justify-content: space-around;
+  height: 50px;
   width: 450px;
+  margin-bottom: -20px;
 }
 
 input {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   border-radius: 20px;
-  border: none;
+  margin-right: 5px;
 }
 
 button {
   border: none;
   padding: 10px;
-  border-radius: 20px;
-  margin: 0 5px;
-}
-.allTodos {
-  list-style: none;
+  border-radius: 40px;
   margin: 0;
-  padding: 0;
+  width: 100px;
+}
+
+/* button:hover{
+  background-color: rgb(255,0,0);
+  color: white;
+} */
+
+.allTodos {
+  padding: 10px;
+  width: 100%;
+  overflow: auto;
 }
 .singleTodo {
-  border-radius: 50px;
-  margin: 10px 0;
+  border-radius: 40px;
+  margin: 10px 0px;
   background-color: #5dadf8;
-  padding: 10px 20px;
+  padding: 8px 10px px 15px;
   display: flex;
-  width: 450px;
   align-items: center;
 }
 .todoText {
+  /* button at last */
   flex: 1;
+  margin-left: 15px;
+}
+.trashicon{
+  width: 20px;
+  height: 20px;
 }
